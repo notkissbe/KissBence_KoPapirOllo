@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ketkep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/jatekospick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/paper"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A te választásod"></TextView>
+
+        <ImageView
+            android:id="@+id/geppick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/paper"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A gép választása"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eredmény: Ember 0, Compjuter 0"
+            android:id="@+id/eredmeny"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ketkep"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/kogomb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ko"></Button>
+
+        <Button
+            android:id="@+id/papirgomb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="papir"></Button>
+
+        <Button
+            android:id="@+id/ollogomb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ollo"></Button>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
